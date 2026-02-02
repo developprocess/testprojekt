@@ -7,51 +7,21 @@
     <style>
         body, html { 
             margin: 0; padding: 0; height: 100%; width: 100%; 
-            background-color: #f0f2f5; font-family: -apple-system, sans-serif;
-            display: flex; flex-direction: column; align-items: center;
+            overflow: hidden; background-color: #ffffff;
         }
-        
-        /* Der Bereich für den Button (oben fixiert für Safari) */
-        .header-fix {
-            width: 100%; background: #ffffff; padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;
-            box-sizing: border-box; z-index: 100;
-        }
-
-        .btn-open {
-            display: inline-block; background-color: #007bff; color: white;
-            padding: 12px 25px; text-decoration: none; border-radius: 8px;
-            font-weight: bold; font-size: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-
-        /* Das Hauptfenster */
-        .content { flex-grow: 1; width: 100%; height: 100%; position: relative; }
-        
         iframe { 
             border: none; width: 100%; height: 100%; 
-            display: block; position: absolute;
+            display: block;
         }
-
-        .hint { font-size: 11px; color: #666; margin-top: 8px; }
     </style>
 </head>
 <body>
 
-    <div class="header-fix">
-        <a href="https://script.google.com/macros/s/AKfycbxY07NtUXzrE0y-zuideXsBRmj_XEnj5ULf9iYz5qKYwNV2J6HULK-erBulnhTTfxg/exec" 
-           target="_blank" class="btn-open">
-           Portal öffnen (Safari Fix)
-        </a>
-        <p class="hint">Falls unten nichts erscheint, bitte den blauen Button nutzen.</p>
-    </div>
-
-    <div class="content">
-        <iframe 
-            src="https://script.google.com/macros/s/AKfycbxY07NtUXzrE0y-zuideXsBRmj_XEnj5ULf9iYz5qKYwNV2J6HULK-erBulnhTTfxg/exec" 
-            sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals"
-            allow="geolocation; microphone; camera">
-        </iframe>
-    </div>
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbxY07NtUXzrE0y-zuideXsBRmj_XEnj5ULf9iYz5qKYwNV2J6HULK-erBulnhTTfxg/exec" 
+        sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals"
+        allow="geolocation; microphone; camera">
+    </iframe>
 
 </body>
 </html>
